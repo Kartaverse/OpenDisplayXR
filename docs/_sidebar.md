@@ -1,0 +1,16 @@
+<!-- docs/_sidebar.md -->
+- [Home](/)
+- **Monado**
+	- [Monado for Windows](guides/Monado_for_Windows)
+	- [Monado for Linux](guides/Monado_for_Linux)
+- **DCC Tools**
+	- [Using Blender with OpenXR 3D Displays](guides/Using_Blender_with_OpenXR_3D_Displays)
+	- [Quadbuffer Stereo in SideFX Houdini](guides/Quadbuffer_Stereo_in_SideFX_Houdini)
+- **Contact**
+	- [Email](mailto:andrew@andrewhazelden.com)
+	- [GitHub](https://github.com/AndrewHazelden)
+	- [LinkedIn](https://www.linkedin.com/in/andrewhazelden/)
+- **Links**
+	- [Medium Blog](https://medium.com/@andrewhazelden)
+	- [Facebook Group](https://www.facebook.com/groups/kartavr)
+	- [Google Group](https://groups.google.com/g/kartaverse/)

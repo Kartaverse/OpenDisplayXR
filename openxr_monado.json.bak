@@ -1,0 +1,12 @@
+{
+    "file_format_version": "1.0.0",
+    "runtime": {
+        "name": "Monado",
+        "library_path": "bin\\openxr_monado.dll"
+    },
+    "active": "remote",
+    "remote": {
+        "version": 0,
+        "port": 4242
+    }
+}
