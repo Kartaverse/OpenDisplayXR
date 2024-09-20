@@ -3,6 +3,8 @@
 - **Monado**
 	- [Monado for Windows](guides/Monado_for_Windows)
 	- [Monado for Linux](guides/Monado_for_Linux)
+	- [Monado CAVE Merge Request](https://gitlab.freedesktop.org/monado/monado/-/merge_requests/2174)
+	- [OpenXR for Fulldome Thread](https://community.khronos.org/t/projection-caves-openxr-spec/108002)
 - **DCC Tools**
 	- [Using Blender with OpenXR 3D Displays](guides/Using_Blender_with_OpenXR_3D_Displays)
 	- [Quadbuffer Stereo in SideFX Houdini](guides/Quadbuffer_Stereo_in_SideFX_Houdini)
