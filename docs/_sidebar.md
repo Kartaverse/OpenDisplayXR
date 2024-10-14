@@ -8,6 +8,7 @@
 - **DCC Tools**
 	- [Using Blender with OpenXR 3D Displays](guides/Using_Blender_with_OpenXR_3D_Displays)
 	- [Quadbuffer Stereo in SideFX Houdini](guides/Quadbuffer_Stereo_in_SideFX_Houdini)
+	- [Acer SpatialLabs Display Unlocked](guides/Acer_SpatialLabs_Display/SpatialLabs_Unlocked)
 - **Contact**
 	- [Email](mailto:andrew@andrewhazelden.com)
 	- [GitHub](https://github.com/AndrewHazelden)
