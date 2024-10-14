@@ -9,7 +9,7 @@ The biggest headache when trying to use an Acer SpatialLabs display, in a post-p
 
 In a stock configuration, it is very hard to use the SpatialLabs display with the common DCC (Digital Content Creation) tools that VFX artists, video editors, and graphic designers use daily.
 
-This guide hopes to assit you solving the biggest user experience issues that an Acer SpatialLabs display presents to broader media & entertainment sector adoption.
+This guide hopes to assist you solving the biggest user experience issues that an Acer SpatialLabs display presents to broader media & entertainment sector adoption.
 
 ## Download Resources
 
