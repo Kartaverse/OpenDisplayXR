@@ -78,7 +78,7 @@ After reformatting the text, paste the re-flowed and re-indented javascript code
 
 Included with the "SpatialLabs Unlocked" guide's ZIP download is a copy of the pre-patched "main.js" file that is ready to use. The file is located at "Resources/Patched SpatialLabs main.js Javascript File/main.js". (A backup version of the unpatched file is included and it is named "main.js.bak".)
 	
-This patched "main.js" file was tested on October 14, 2024 and it works with SpatialLabs Experience Center v1.3.244.
+This patched "main.js" file was tested on October 14, 2024 and it works with SpatialLabs Experience Center v1.3.256 or v1.3.244.
 
 Place a copy of the modified "main.js" file at the location:
 
