@@ -8,7 +8,7 @@ A library called "[VRto3D](https://github.com/oneup03/VRto3D)" allows you use Op
 
 VRto3D can playback visuals from an immersive VR program as a Half-SBS formatted image in a fullscreen mode on an Acer SpatialLabs monitor. This technique allows OpenVR based software like BMD Fusion Studio and Resolve Studio to work with the Acer SpatialLabs display.
 
-![SBS on a SpatialLab Display](images/vrto3d_sbs.png)
+![SBS on a SpatialLab Display](Images/vrto3d_sbs.png)
 
 ## Acer 3D Mode
 
