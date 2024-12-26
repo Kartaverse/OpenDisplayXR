@@ -52,7 +52,7 @@ Note: On Linux the "Display Settings" list a PluraView3D display's panel as a "L
 	cd $HOME/monado
 	mkdir build
 	cd build
-	cmake .. -DCMAKE_BUILD_TYPE=Debug -G “Unix Makefiles”
+	cmake .. -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles"
 	cmake --build .
 	sudo cmake --build . --target install
 	}
