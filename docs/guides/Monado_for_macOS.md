@@ -74,11 +74,140 @@ Use the macOS terminal to run the following shell commands:
 	make
 	}
 
-The output from the build process is stored in:
+The output from the build process (monado-cli) is stored in:
 
-	cd $HOME/monado/build
+	$HOME/monado/build/src/xrt/targets/cli/
 
-## Monado Based Simulator OpenXR Display Canvas Resolution
+The cmake install script can be used to install this executable into the folder:
+
+	/usr/local/bin/monado-cli
+
+This is done by running:
+
+	cd $HOME/monado/build/src/xrt/targets/cli/
+	sudo cmake -P cmake_install.cmake
+
+When you try to run the CLI program you will get an error:
+
+	% /usr/local/bin/monado-cli
+	dyld[28307]: Library not loaded: @rpath/libMoltenVK.dylib
+	  Referenced from: <FA22C6D0-6CB8-38A8-B5ED-BDBF8FDF63D3> /usr/local/bin/monado-cli
+	  Reason: no LC_RPATH's found
+	zsh: abort      /usr/local/bin/monado-cli
+
+You can fix the LC_RPATH error using:
+
+	sudo install_name_tool -add_rpath "$VULKAN_SDK/lib/" /usr/local/bin/monado-cli
+
+Now the monado-cli executable works as expected:
+
+	% monado-cli
+	Monado-CLI 0.0.1
+	Usage: monado-cli command [options] [file]
+	
+	Commands:
+	  test       - List found devices, for prober testing.
+	  probe      - Just probe and then exit.
+	  lighthouse - Control the power of lighthouses [on|off].
+	  calibrate  - Calibrate a camera and save config (not implemented yet).
+	  calib-dumb - Load and dump a calibration to stdout.
+	  slambatch  - Runs a sequence of EuRoC datasets with the SLAM tracker.
+
+You can run the Monado Test command using:
+
+	monado-cli test
+
+The Monado Test output in the terminal is:
+
+	% monado-cli test
+	 :: Creating instance!
+	 :: Probing!
+	 :: Dumping!
+		  0: 0x096e:0x0201
+			ptr:              0x14b606720
+			usb_dev_class:    00
+			usb.bus:          2
+			usb.addr:         2
+			port:             1
+			libusb:           0x600001ebc540
+		  1: 0x1235:0x8006
+			ptr:              0x14b6067b8
+			usb_dev_class:    00
+			usb.bus:          2
+			usb.addr:         1
+			port:             3
+			libusb:           0x600001ebc4e0
+	 :: Creating system devices!
+	 INFO [p_create_system] Creating system:
+		Builders:
+			simulated: Simulated devices builder
+			legacy: Legacy probing system
+		No builder selected in config (or wasn't compiled in)
+		No builder was certain that it could create a head device
+		Selected legacy because it maybe could create a head
+		Using builder legacy: Legacy probing system
+		Got devices:
+			0: Simulated HMD
+		In roles:
+			head: Simulated HMD
+			left: <none>
+			right: <none>
+			gamepad: <none>
+			eyes: <none>
+			hand_tracking.left: <none>
+			hand_tracking.right: <none>
+		Result: XRT_SUCCESS
+	 :: Listing created devices!
+		 0: Simulated HMD
+	 :: Listing role assignments!
+		head:                Simulated HMD
+		left:                <none>
+		right:               <none>
+		gamepad:             <none>
+		hand_tracking.left:  <none>
+		hand_tracking.right: <none>
+	 :: All ok, shutting down.
+	 :: Exiting '0'
+
+You can run the Monado Probe command using:
+
+	monado-cli probe
+
+The Monado Probe output in the terminal is:
+
+	% monado-cli probe
+	 :: Creating instance!
+	 :: Creating system devices!
+	 INFO [p_create_system] Creating system:
+		Builders:
+			simulated: Simulated devices builder
+			legacy: Legacy probing system
+		No builder selected in config (or wasn't compiled in)
+		No builder was certain that it could create a head device
+		Selected legacy because it maybe could create a head
+		Using builder legacy: Legacy probing system
+		Got devices:
+			0: Simulated HMD
+		In roles:
+			head: Simulated HMD
+			left: <none>
+			right: <none>
+			gamepad: <none>
+			eyes: <none>
+			hand_tracking.left: <none>
+			hand_tracking.right: <none>
+		Result: XRT_SUCCESS
+	 :: Regular built in drivers
+		quest_link
+		Simulated
+	 :: Additional built in drivers
+	 :: Destroying probed devices
+	 :: All ok, shutting down.
+	 :: Exiting '0'
+
+## Extra Tips
+
+### Monado Based Simulator OpenXR Display Canvas Resolution
 
 If you want to change the default resolution of a Monado OpenXR HMD screen, you can edit the following lines of code in the file named "r\_hmd.c":
 
