@@ -230,6 +230,10 @@ Try solving it by running:
 
 ### libopenxr_monado.dylib Compiling Issue
 
+For Monado on macOS focused usage, you could optionally disable the following Monado cmake parameters:
+
+	-DXRT_BUILD_DRIVER_QUEST_LINK=0 XRT_BUILD_DRIVER_WIVRN=0 XRT_MODULE_AUX_VIVE=0
+
 If you get a Monado compiling error for:
 
 	error:
@@ -246,7 +250,7 @@ If you get a Monado compiling error for:
 	make[1]: *** [src/xrt/targets/openxr/CMakeFiles/openxr_monado.dir/all] Error 2
 	make: *** [all] Error 2
 
-You can still force the generation of the CLI using:
+You can still force the generation of the monado-cli excutable using:
 
 	cd $HOME/monado/build/src/xrt/targets/cli/
 	make
