@@ -3,6 +3,7 @@
 - **Monado**
 	- [Monado for Windows](guides/Monado_for_Windows)
 	- [Monado for Linux](guides/Monado_for_Linux)
+	- [Monado for macOS](guides/Monado_for_macOS)
 	- [Monado CAVE Merge Request](https://gitlab.freedesktop.org/monado/monado/-/merge_requests/2174)
 	- [OpenXR for Fulldome Thread](https://community.khronos.org/t/projection-caves-openxr-spec/108002)
 - **DCC Tools**
