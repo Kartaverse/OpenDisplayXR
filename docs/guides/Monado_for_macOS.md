@@ -14,7 +14,7 @@ GitHub user Max Thomas has shared a [GitHub Gist tip](https://gist.github.com/sh
 
 - /usr/local/bin/monado-cli
 
-## Install the homebrew package manager for macOS.
+## Install the homebrew package manager for macOS
 
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	
@@ -32,26 +32,22 @@ For simplicity, it is likely easiest if you place the SDK files into your home f
 
 ![VulkanSDK Install 2](Images/macos_vulkan2.png)
 
-## Download OpenXR SDK
+## Download the OpenXR SDK
 
 	{
 	git clone https://github.com/KhronosGroup/OpenXR-SDK.git
 	cd OpenXR-SDK
 	}
 	
-## Patch the OpenXR SDK for macOS
-
-Note: A small adjustment to the patch file is needed to update it for the latest version of the OpenXR SDK.
+## Compile OpenXR using Xcode
 
 	{
 	cd $HOME/OpenXR-SDK
-	curl -O https://gist.githubusercontent.com/shinyquagsire23/1e3d38940d7381181ff88f11a5550547/raw/de7bfe289e286492e8328855f1f1efbaa95e1a40/openxr-sdk-loader-macos.patch
-	git apply openxr-sdk-loader-macos.patch
-	mkdir -p build && cd build
-	cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/opt/homebrew/ ..
-	make install
+	mkdir -p build/macos
+	cd build/macos
+	cmake -G "Xcode" ../..
+	xcodebuild -scheme ALL_BUILD build
 	}
-
 
 ## Edit your .zshrc file:
 
