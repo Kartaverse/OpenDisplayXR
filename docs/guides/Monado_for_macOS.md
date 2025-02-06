@@ -216,4 +216,36 @@ If you want to change the default resolution of a Monado OpenXR HMD screen, you 
 	info.display.w_pixels = 3840*2;
 	info.display.h_pixels = 2160;
 
+### CMAKE_C_COMPILER Compiler Issue
 
+When running cmake on macos, if you get the following error:
+
+	-- The CXX compiler identification is unknown
+	CMake Error at CMakeLists.txt:22 (project):
+	  No CMAKE_C_COMPILER could be found.
+
+Try solving it by running:
+	sudo xcode-select --reset
+
+### libopenxr_monado.dylib Compiling Issue
+
+If you get a Monado compiling error for:
+
+	error:
+	[ 83%] Linking CXX shared library libopenxr_monado.dylib
+	ld: warning: ignoring duplicate libraries: '../../auxiliary/math/libaux_math.a', '../../auxiliary/os/libaux_os.a', '../../auxiliary/util/libaux_util.a', '../../auxiliary/vk/libaux_vk.a', '../../state_trackers/prober/libst_prober.a', '../common/libtarget_lists.a'
+	Undefined symbols for architecture arm64:
+	  "_ql_xrsp_sidechannel_eye_l_orient", referenced from:
+		  <initial-undefines>
+	  "_ql_xrsp_sidechannel_eye_r_orient", referenced from:
+		  <initial-undefines>
+	ld: symbol(s) not found for architecture arm64
+	c++: error: linker command failed with exit code 1 (use -v to see invocation)
+	make[2]: *** [src/xrt/targets/openxr/libopenxr_monado.dylib] Error 1
+	make[1]: *** [src/xrt/targets/openxr/CMakeFiles/openxr_monado.dir/all] Error 2
+	make: *** [all] Error 2
+
+You can still force the generation of the CLI using:
+
+	cd $HOME/monado/build/src/xrt/targets/cli/
+	make
