@@ -218,13 +218,14 @@ If you want to change the default resolution of a Monado OpenXR HMD screen, you 
 
 ### CMAKE_C_COMPILER Compiler Issue
 
-When running cmake on macos, if you get the following error:
+When running cmake on macOS, if you get the following error:
 
 	-- The CXX compiler identification is unknown
 	CMake Error at CMakeLists.txt:22 (project):
 	  No CMAKE_C_COMPILER could be found.
 
 Try solving it by running:
+
 	sudo xcode-select --reset
 
 ### libopenxr_monado.dylib Compiling Issue
