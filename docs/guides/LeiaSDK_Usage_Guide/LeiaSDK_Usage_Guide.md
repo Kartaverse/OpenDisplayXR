@@ -5,9 +5,11 @@ Written by: Andrew Hazelden <andrew@andrewhazelden.com>
 
 Step 1. Download the Spatial Reality SDK from the project's [GitHub Releases page](https://github.com/LeiaInc/LeiaSR-Windows-Releases/releases).
 
-Expand the zip archive contents to the root folder of the C:\ drive. (This will keep the filepaths simple when compiling the code):
+Expand the zip archive contents to the root folder of the C:\ drive and rename the folder to "simulatedreality-SDK":
 
     C:\simulatedreality-SDK\
+
+(This folder name choice will keep the filepaths simple when compiling the code.)
 
 SDK Reference URLs:
 
@@ -28,6 +30,10 @@ Download the [Visual Studio 2019 community installer](https://aka.ms/vs/16/relea
 
 Step 4. Create the Visual Studio solution for the "OpenGL Weaving" demo using cmake from the command prompt:
 
+![VS Build](Images/opengl_weaving_command_prompt.png)
+
+Enter the following shell commands:
+
     cd C:\simulatedreality-SDK\examples\opengl_weaving
     mkdir build
     cd build
@@ -40,13 +46,23 @@ Step 5. Compile the code in Visual Studio
 
 Change the build output from "Debug" to "Release". Then select the "Build > Build Solution" menu item.
 
+![VS Build](Images/opengl_weaving_vs.png)
+
 The compiled output can be found on disk at:
 
     C:\simulatedreality-SDK\examples\opengl_weaving\build\Release\
 
+![opengl weaving](Images/opengl_weaving_app.png)
+
+![opengl weaving Command Prompt](Images/opengl_weaving_app_running.png)
+
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 
 Step 6. Create the Visual Studio solution for the "OpenGL Image Viewer" demo using cmake from the command prompt:
+
+![VS Build](Images/opengl_image_viewer_command_prompt.png)
+
+Enter the following shell commands:
 
     cd C:\simulatedreality-SDK\examples\opengl_image_viewer
     mkdir build
@@ -60,11 +76,14 @@ Step 5. Compile the code in Visual Studio
 
 Change the build output from "Debug" to "Release". Then select the "Build > Build Solution" menu item.
 
+![VS Build](Images/opengl_image_viewer_vs.png)
+
 The compiled output can be found on disk at:
 
     C:\simulatedreality-SDK\examples\opengl_image_viewer\build\Release\
 
-When you run the example_opengl_image_viewer program the syntax is:
+When you run the example_opengl_image_viewer.exe program the syntax is:
 
     example_opengl_image_viewer.exe "C:\Path\To\image.png"
 
+![opengl image viewer Command Prompt](Images/opengl_image_viewer_app_running.png)
