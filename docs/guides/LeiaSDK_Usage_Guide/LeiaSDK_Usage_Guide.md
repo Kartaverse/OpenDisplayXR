@@ -21,10 +21,13 @@ SDK Reference URLs:
 
 Step 2. [Download the cmake program](https://cmake.org/download/). When installing cmake, be sure to enable the installer checkbox option that adds cmake to the system path environment variable.
 
+![cmake Install](Images/cmake_install.png)
 
 Step 3. Install Visual Studio Community Edition:
 
 Download the [Visual Studio 2019 community installer](https://aka.ms/vs/16/release/vs_community.exe). After running the Visual Studio installer, select the "Desktop development with c++" option.
+
+![Visual Studio Install](Images/vs_install.png)
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 
