@@ -12,6 +12,7 @@
 - **Acer SpatialLabs**
 	- [Acer SpatialLabs Display Unlocked](guides/Acer_SpatialLabs_Display/SpatialLabs_Unlocked)
 	- [Using OpenVR With Stereo3D Displays](guides/OpenVR/Using_OpenVR_With_Stereo3D_Displays)
+	- [Leia SR SDK Usage Guide](guides/LeiaSDK_Usage_Guide)
 - **Contact**
 	- [Email](mailto:andrew@andrewhazelden.com)
 	- [GitHub](https://github.com/AndrewHazelden)
