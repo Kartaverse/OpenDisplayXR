@@ -40,7 +40,13 @@ The attribute is stored in the Windows registry at:
 
 Setting this registry entry to "0" (the number zero) will disable this irritating feature.
 
-If you double-click on the included "Resources/Windows Registry File/SpatialLabs_Turn_Fullscreen_Detection_Off.reg" windows registry file you can apply the fullscreen detection modification.
+There is a new focus detection feature that can be disabled. The attribute is stored in the Windows registry at:
+
+		HKEY_LOCAL_MACHINE\SOFTWARE\Acer\SpatialLabs\Focus_Detection
+
+Setting this registry entry to "0" (the number zero) will disable this  feature as well.
+
+If you double-click on the included "Resources/Windows Registry File/SpatialLabs_Turn_Fullscreen_Detection_Off.reg" windows registry file you can apply the fullscreen detection and focus detection modifications.
 
 ![Regedit Dialog](Images/apply_registry.png)
 
