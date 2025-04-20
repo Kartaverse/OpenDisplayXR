@@ -6,6 +6,9 @@
 	- [Monado for macOS](guides/Monado_for_macOS)
 	- [Monado CAVE Merge Request](https://gitlab.freedesktop.org/monado/monado/-/merge_requests/2174)
 	- [OpenXR for Fulldome Thread](https://community.khronos.org/t/projection-caves-openxr-spec/108002)
+- **FreeVR (VRPN Support for Monado Remote)**
+	- [Build FreeVR on Windows Cygwin](guides/FreeVR/freevr-cygwin)
+	- [Build FreeVR on Windows WSL](guides/FreeVR/freevr-wsl)
 - **DCC Tools**
 	- [Using Blender with OpenXR 3D Displays](guides/Using_Blender_with_OpenXR_3D_Displays)
 	- [Quadbuffer Stereo in SideFX Houdini](guides/Quadbuffer_Stereo_in_SideFX_Houdini)
@@ -18,7 +21,7 @@
 	- [GitHub](https://github.com/AndrewHazelden)
 	- [LinkedIn](https://www.linkedin.com/in/andrewhazelden/)
 - **Links**
-	- [Medium Blog](https://medium.com/@andrewhazelden)
 	- [Facebook Group](https://www.facebook.com/groups/kartavr)
-	- [Google Group](https://groups.google.com/g/kartaverse/)
 	- [Reddit Group](https://www.reddit.com/r/Kartaverse/)
+	- [Medium Blog](https://medium.com/@andrewhazelden)
+	- [Google Group](https://groups.google.com/g/kartaverse/)
