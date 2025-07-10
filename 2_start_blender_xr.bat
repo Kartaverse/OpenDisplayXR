@@ -15,6 +15,6 @@ REM Resize the Monado Window to fit across a dual monitor extended desktop layou
 start "Extended Desktop Resize" %~dp0\bin\extended_desktop_resize.exe
 
 REM Start Blender (Update the filepath to the latest Blender version number)
-"C:\Program Files\Blender Foundation\Blender 4.1\blender-launcher.exe"
+"C:\Program Files\Blender Foundation\Blender 4.4\blender-launcher.exe"
 
 REM pause
