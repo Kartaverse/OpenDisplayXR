@@ -49,7 +49,7 @@ The two PluraView3D display panels need to be arranged in a horizontal layout in
 
 ![Blender Shortcut](Images/blender_image6.png)
 
-8\. After Blender has finished loading, select the "Edit \> Preferences" menu item. In the "Blender Preferences" window, click on the Add-ons sidebar item. Then enable the checkbox by the "3D View: VR scene Inspection" addon.
+8\. After Blender has finished loading, select the "Edit \> Preferences" menu item. In the "Blender Preferences" window, click on the Add-ons sidebar item. Then enable the checkbox by the "VR Scene Inspection" addon.
 
 ![Blender Prefs](Images/blender_image14.png)
 
